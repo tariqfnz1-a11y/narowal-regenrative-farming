@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regenerative Farming Learning Hub · Narowal, Punjab</title>
+    <meta
+      name="description"
+      content="A Practical Digital Learning Resource for Farmers of Narowal, Punjab, Pakistan. Bilingual English & Urdu guide to soil health, crops, water saving, compost, and pest management."
+    />
+    <meta property="og:title" content="Regenerative Farming Learning Hub · احیائی کاشتکاری کا تعلیمی مرکز" />
+    <meta
+      property="og:description"
+      content="A Practical Digital Learning Resource for Farmers of Narowal, Punjab, Pakistan."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link" id="skip-link">Skip to content</a>
+
+    <!-- Sticky Compact Top Bar (<= 58px mobile height) -->
+    <header class="top-bar" role="banner">
+      <div class="container top-bar-inner">
+        <!-- Zone 1: Brand Title -->
+        <a href="#home" class="brand-link" id="brand-home-link">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#143D30" />
+            <path d="M16 25V12" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" />
+            <path d="M16 18C10.5 18 7.5 14 7.5 9.5C12.5 9.5 16 12 16 18Z" fill="#66BB6A" />
+            <path d="M16 14.5C21.5 14.5 24.5 10.5 24.5 6C19.5 6 16 8.5 16 14.5Z" fill="#A5D6A7" />
+          </svg>
+          <span class="brand-text" id="brand-title">Regenerative Farming Hub</span>
+        </a>
+
+        <!-- Zone 2: Concise Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Primary Navigation" id="desktop-nav">
+          <a href="#home" class="nav-link" data-nav="home" id="nav-home">Home</a>
+          <a href="#crops-library" class="nav-link" data-nav="crops" id="nav-crops">Crop Library</a>
+          <a href="#field-guide" class="nav-link" data-nav="field-guide" id="nav-field-guide">Field ID Guide</a>
+          <a href="#learning-centre" class="nav-link" data-nav="learning-centre" id="nav-sim-centre">Sim &amp; Learn Centre</a>
+          <a href="#course" class="nav-link" data-nav="course" id="nav-course">17-Chapter Course</a>
+          <a href="#section/my-farm-plan" class="nav-link" data-nav="plan" id="nav-plan">My Farm Plan</a>
+        </nav>
+
+        <!-- Zone 3: Clearly Visible Language Selector + Mobile Menu Button -->
+        <div class="top-actions">
+          <div class="lang-switch" id="lang-switch-group" role="group" aria-label="Language selector">
+            <svg class="lang-globe" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+            </svg>
+            <button type="button" class="lang-btn is-active" data-lang="en" id="btn-lang-en" aria-pressed="true">English</button>
+            <button type="button" class="lang-btn" data-lang="ur" id="btn-lang-ur" aria-pressed="false" lang="ur">اردو</button>
+          </div>
+          <button
+            type="button"
+            class="mobile-menu-btn"
+            id="mobile-menu-toggle"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+            aria-label="Open navigation menu"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-drawer" id="mobile-drawer" hidden>
+        <div class="container mobile-drawer-links">
+          <a href="#home" class="mobile-nav-link" data-nav="home" id="m-nav-home">Home</a>
+          <a href="#crops-library" class="mobile-nav-link" data-nav="crops" id="m-nav-crops">Crop Library</a>
+          <a href="#field-guide" class="mobile-nav-link" data-nav="field-guide" id="m-nav-field-guide">Field ID Guide</a>
+          <a href="#learning-centre" class="mobile-nav-link" data-nav="learning-centre" id="m-nav-sim-centre">Sim &amp; Learn Centre</a>
+          <a href="#course" class="mobile-nav-link" data-nav="course" id="m-nav-course">17-Chapter Course</a>
+          <a href="#section/my-farm-plan" class="mobile-nav-link" data-nav="plan" id="m-nav-plan">My Farm Plan</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- ==================== HOMEPAGE VIEW ==================== -->
+      <div id="home-view">
+        <!-- Welcome Banner -->
+        <section class="hero-section">
+          <div class="container">
+            <div class="hero-card">
+              <img
+                src="./images/hero-narowal-farm.jpg"
+                alt="Healthy regenerative farm in Narowal, Punjab with green rice and wheat fields, trees, and irrigation channel"
+                class="hero-img"
+                referrerpolicy="no-referrer"
+              />
+              <div class="hero-scrim" aria-hidden="true"></div>
+              <div class="hero-content">
+                <p class="hero-kicker" id="hero-kicker">District Narowal · Punjab, Pakistan</p>
+                <h1 class="hero-title-en" id="hero-title-en">REGENERATIVE FARMING LEARNING HUB</h1>
+                <p class="hero-title-ur" lang="ur" dir="rtl" id="hero-title-ur">احیائی کاشتکاری کا تعلیمی مرکز</p>
+                <p class="hero-subtitle" id="hero-subtitle">
+                  A Practical Digital Learning Resource for Farmers of Narowal, Punjab, Pakistan.
+                </p>
+                <div class="hero-actions">
+                  <a href="#crops-library" class="btn btn-primary" id="hero-cta-crops">Explore Crop Library (19)</a>
+                  <a href="#field-guide" class="btn btn-secondary" id="hero-cta-field-guide">Field ID Guide</a>
+                  <a href="#home-farm-lab" class="btn btn-secondary" id="hero-cta-lab">Home Farm Lab</a>
+                  <a href="#learning-centre" class="btn btn-secondary" id="hero-cta-centre">Simulations &amp; Quizzes</a>
+                  <a href="#course" class="btn btn-secondary" id="hero-cta-course">17-Chapter Course</a>
+                  <a href="#topics" class="btn btn-secondary" id="hero-cta-primary">Explore 15 Topics</a>
+                  <a href="#section/my-farm-plan" class="btn btn-secondary" id="hero-cta-secondary">Open My Farm Plan</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Search & Progress Strip -->
+        <section class="utility-section">
+          <div class="container utility-grid">
+            <!-- Search Box -->
+            <div class="search-panel">
+              <label for="hub-search-input" class="search-label" id="search-label">
+                Search lessons, crops, insects, or terms
+              </label>
+              <div class="search-input-wrap">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="11" cy="11" r="7" />
+                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+                <input
+                  type="search"
+                  id="hub-search-input"
+                  class="search-input"
+                  placeholder="Search wheat, basmati, compost, ladybird, AWD, kanal..."
+                  autocomplete="off"
+                />
+                <button type="button" id="hub-search-clear" class="search-clear-btn" hidden>Clear</button>
+              </div>
+              <div id="search-results-box" class="search-results-box" hidden></div>
+            </div>
+
+            <!-- Learning Progress Card -->
+            <div class="progress-panel" aria-live="polite">
+              <div class="progress-header">
+                <span class="progress-title" id="progress-title">Your Learning Progress</span>
+                <span class="progress-count tabular-nums" id="progress-count">0 / 15 topics explored</span>
+              </div>
+              <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0" id="progress-track">
+                <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+              </div>
+              <div class="progress-header" style="margin-top:14px">
+                <span class="progress-title" id="course-progress-title">Course Progress (17 Chapters)</span>
+                <span class="progress-count tabular-nums" id="course-progress-count">0 / 17 chapters completed</span>
+              </div>
+              <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="17" aria-valuenow="0" id="course-progress-track">
+                <div class="progress-fill" id="course-progress-fill" style="width: 0%"></div>
+              </div>
+              <div class="progress-footer">
+                <a href="#topics" class="text-link" id="progress-action">View All 15 Topics</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Interactive 19-Crop Library, 12-Month Calendar, Comparison & Rotation Planner -->
+        <section class="crop-library-section" id="crops-library">
+          <div class="container">
+            <div class="section-head">
+              <h2 class="section-heading" id="crop-lib-heading">Narowal District Interactive Crop Library</h2>
+              <p class="section-subheading" id="crop-lib-subheading">
+                Explore all 19 handbook crops with growth-stage photos, 12-month Narowal calendar, side-by-side comparison, and regenerative rotation planner.
+              </p>
+            </div>
+            <div class="crop-lib-shell" id="crop-lib-workbench"></div>
+          </div>
+        </section>
+
+        <!-- Illustrated Bilingual Field Identification Guide (4 Libraries + Guided Activity) -->
+        <section class="field-guide-section" id="field-guide">
+          <div class="container">
+            <div class="section-head">
+              <h2 class="section-heading" id="fg-heading">Illustrated Bilingual Field Identification Guide</h2>
+              <p class="section-subheading" id="fg-subheading">
+                Four field libraries for Narowal: Beneficial Insects, Harmful Pests, Farm Birds, and Weeds, Herbs &amp; Useful Plants — plus a guided field identifier.
+              </p>
+            </div>
+            <div class="crop-lib-shell" id="field-guide-workbench"></div>
+          </div>
+        </section>
+
+        <!-- Interactive Home Farm Lab (10 Practical Tests + 7 Farm Lab Tools) -->
+        <section class="home-lab-section" id="home-farm-lab">
+          <div class="container">
+            <div class="section-head">
+              <h2 class="section-heading" id="lab-heading">Interactive Home Farm Lab</h2>
+              <p class="section-subheading" id="lab-subheading">
+                10 hands-on screening activities using everyday household and farm items, plus 7 practical calculators and farm logs for Narowal.
+              </p>
+            </div>
+            <div class="crop-lib-shell" id="home-lab-workbench"></div>
+          </div>
+        </section>
+
+        <!-- Interactive Farm Simulation & Learning Centre (6 Sims + Videos + 3-Mode Quizzes + 5-Part Summaries) -->
+        <section class="learning-centre-section" id="learning-centre">
+          <div class="container">
+            <div class="section-head">
+              <h2 class="section-heading" id="lc-heading">Interactive Farm Simulation &amp; Learning Centre</h2>
+              <p class="section-subheading" id="lc-subheading">
+                Experiment locally in your browser with 6 Narowal farm simulations, verified training videos, 3-mode bilingual quizzes, and printable module summaries.
+              </p>
+            </div>
+            <div class="crop-lib-shell" id="learning-centre-workbench"></div>
+          </div>
+        </section>
+
+        <!-- 17-Chapter Farmer Education Course -->
+        <section class="course-section" id="course">
+          <div class="container">
+            <div class="section-head">
+              <h2 class="section-heading" id="course-heading">17-Chapter Farmer Education Course</h2>
+              <p class="section-subheading" id="course-subheading">
+                Based directly on the Narowal Regenerative Farming Handbook. Tap any chapter to open expandable bilingual lessons (Parts A–J) and a 3-question check.
+              </p>
+            </div>
+            <div class="course-grid" id="course-grid"></div>
+          </div>
+        </section>
+
+        <!-- 15 Colourful Navigation Cards -->
+        <section class="topics-section" id="topics">
+          <div class="container">
+            <div class="section-head">
+              <h2 class="section-heading" id="topics-heading">15 Practical Learning Sections</h2>
+              <p class="section-subheading" id="topics-subheading">
+                Tap any card to open clear, step-by-step field guidance for Narowal farms.
+              </p>
+            </div>
+            <div class="topics-grid" id="topics-grid"></div>
+          </div>
+        </section>
+
+        <!-- Visual Comparison Spotlight -->
+        <section class="comparison-section">
+          <div class="container">
+            <div class="section-head">
+              <h2 class="section-heading" id="comparison-heading">See the Difference in Your Field</h2>
+              <p class="section-subheading" id="comparison-subheading">
+                Walk your field after rain and compare healthy living soil with strained land.
+              </p>
+            </div>
+            <div class="comparison-layout">
+              <div class="comparison-media-card">
+                <img
+                  src="./images/soil-healthy.jpg"
+                  alt="Farmer hands holding dark crumbly loamy soil with an earthworm and straw mulch"
+                  class="comparison-img"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="comparison-media-caption">
+                  <strong id="comparison-healthy-caption">Healthy Living Soil · Narowal Loam</strong>
+                  <span id="comparison-healthy-sub">Dark, crumbly, earthworms present, covered with straw mulch</span>
+                </div>
+              </div>
+              <div class="comparison-table-card">
+                <div class="comparison-table-wrap">
+                  <table class="comparison-table">
+                    <thead>
+                      <tr>
+                        <th id="th-check">Field Check</th>
+                        <th class="th-healthy" id="th-healthy">Healthy Regenerative Field</th>
+                        <th class="th-warning" id="th-warning">Warning Signs to Watch</th>
+                      </tr>
+                    </thead>
+                    <tbody id="comparison-tbody"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Printable PDF Handbook Banner -->
+        <section class="handbook-section">
+          <div class="container">
+            <div class="handbook-card">
+              <div class="handbook-text">
+                <h2 class="handbook-title" id="handbook-title">District Narowal Bilingual Field Handbook</h2>
+                <p class="handbook-desc" id="handbook-desc">
+                  Read or download the full 21-page English &amp; Urdu handbook with local kanal and maund guidance.
+                </p>
+              </div>
+              <a href="./assets/handbook.pdf" target="_blank" rel="noopener" class="btn btn-primary" id="handbook-link">
+                Open Handbook PDF
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ==================== ACTIVE SECTION DETAIL VIEW ==================== -->
+      <section id="detail-view" class="detail-view" hidden>
+        <div class="container" id="detail-container"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p class="footer-brand" id="footer-note">Regenerative Farming Learning Hub · District Narowal, Punjab, Pakistan</p>
+          <p class="footer-advice" id="footer-advice">
+            Confirm local rates, seed varieties, and recommendations with the Punjab Agriculture Extension Office, Narowal.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#home" class="footer-link" id="footer-link-home">Home</a>
+          <a href="#field-guide" class="footer-link" id="footer-link-fg">Field ID Guide</a>
+          <a href="#home-farm-lab" class="footer-link" id="footer-link-lab">Home Farm Lab</a>
+          <a href="#learning-centre" class="footer-link" id="footer-link-sim">Simulations</a>
+          <a href="#section/my-farm-plan" class="footer-link" id="footer-link-plan">My Farm Plan</a>
+          <a href="./assets/handbook.pdf" target="_blank" rel="noopener" class="footer-link" id="footer-link-pdf">Handbook PDF</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

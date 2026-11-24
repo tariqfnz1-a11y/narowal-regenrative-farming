@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found (404) · Regenerative Farming Learning Hub</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --forest: #1b4d3e;
+        --forest-dark: #12372c;
+        --forest-tint: #ebf4f0;
+        --bg-canvas: #f8f7f2;
+        --bg-surface: #ffffff;
+        --border: #d8ddd4;
+        --text: #1c2420;
+        --muted: #4b5a52;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+        background: var(--bg-canvas);
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+      }
+      html[dir='rtl'] body {
+        font-family: 'Noto Nastaliq Urdu', system-ui, sans-serif;
+        line-height: 2;
+      }
+      .bar {
+        background: var(--forest);
+        color: #ffffff;
+        padding: 12px 18px;
+      }
+      .bar-inner {
+        max-width: 960px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .brand {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1rem;
+      }
+      .lang-btns {
+        display: inline-flex;
+        gap: 4px;
+        background: rgba(255, 255, 255, 0.14);
+        padding: 4px;
+        border-radius: 999px;
+      }
+      .lang-btn {
+        min-height: 38px;
+        padding: 4px 12px;
+        border: 0;
+        border-radius: 999px;
+        background: transparent;
+        color: #ffffff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .lang-btn.is-active {
+        background: #ffffff;
+        color: var(--forest-dark);
+      }
+      .main {
+        flex: 1;
+        max-width: 780px;
+        width: 100%;
+        margin: 32px auto;
+        padding: 0 16px;
+      }
+      .card {
+        background: var(--bg-surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 26px;
+      }
+      .code {
+        margin: 0 0 6px;
+        font-weight: 800;
+        font-size: 0.92rem;
+        color: var(--forest);
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+        color: var(--forest-dark);
+      }
+      p {
+        margin: 0 0 18px;
+        color: var(--muted);
+      }
+      .links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 10px;
+        margin-top: 16px;
+      }
+      .nav-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 10px 14px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        border: 1px solid var(--border);
+        background: var(--forest-tint);
+        color: var(--forest-dark);
+        text-align: center;
+      }
+      .nav-card.primary {
+        background: var(--forest);
+        border-color: var(--forest);
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bar">
+      <div class="bar-inner">
+        <a href="./index.html" class="brand" id="b-title">Regenerative Farming Learning Hub · Narowal</a>
+        <div class="lang-btns" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn is-active" id="btn-en">English</button>
+          <button type="button" class="lang-btn" id="btn-ur" lang="ur">اردو</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="card">
+        <p class="code" id="code-lbl">404 · Page Not Found</p>
+        <h1 id="h1-title">We could not find that farm page</h1>
+        <p id="desc-txt">
+          The link may have moved or been typed incorrectly. Use any shortcut below to return directly to the Narowal Learning Hub.
+        </p>
+
+        <div class="links">
+          <a href="./index.html#home" class="nav-card primary" id="lnk-home">Return to Homepage</a>
+          <a href="./index.html#crops-library" class="nav-card" id="lnk-crops">Crop Library (19 Crops)</a>
+          <a href="./index.html#field-guide" class="nav-card" id="lnk-fg">Field ID Guide</a>
+          <a href="./index.html#home-farm-lab" class="nav-card" id="lnk-lab">Home Farm Lab</a>
+          <a href="./index.html#learning-centre" class="nav-card" id="lnk-sim">Simulations &amp; Quizzes</a>
+          <a href="./index.html#course" class="nav-card" id="lnk-course">17-Chapter Course</a>
+          <a href="./index.html#section/my-farm-plan" class="nav-card" id="lnk-plan">My Farm Plan</a>
+          <a href="./assets/handbook.pdf" target="_blank" rel="noopener" class="nav-card" id="lnk-pdf">Handbook PDF</a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      (function () {
+        var copy = {
+          en: {
+            brand: 'Regenerative Farming Learning Hub · Narowal',
+            code: '404 · Page Not Found',
+            h1: 'We could not find that farm page',
+            desc: 'The link may have moved or been typed incorrectly. Use any shortcut below to return directly to the Narowal Learning Hub.',
+            home: 'Return to Homepage',
+            crops: 'Crop Library (19 Crops)',
+            fg: 'Field ID Guide',
+            lab: 'Home Farm Lab',
+            sim: 'Simulations & Quizzes',
+            course: '17-Chapter Course',
+            plan: 'My Farm Plan',
+            pdf: 'Handbook PDF'
+          },
+          ur: {
+            brand: 'احیائی کاشتکاری کا تعلیمی مرکز · ضلع نارووال',
+            code: '404 · صفحہ نہیں ملا',
+            h1: 'یہ صفحہ موجود نہیں یا منتقل ہو چکا ہے',
+            desc: 'ممکن ہے لنک غلط ٹائپ ہوا ہو یا صفحہ تبدیل ہو گیا ہو۔ نارووال تعلیمی مرکز پر واپس جانے کے لیے نیچے کوئی بھی بٹن دبائیں۔',
+            home: 'واپس ہوم پیج پر جائیں',
+            crops: 'فصل لائبریری (19 فصلیں)',
+            fg: 'فیلڈ شناختی رہنما',
+            lab: 'گھریلو فارم لیب',
+            sim: 'تجربات اور کوئز',
+            course: '17 ابواب کا کورس',
+            plan: 'میرا فارم منصوبہ',
+            pdf: 'ہینڈ بک پی ڈی ایف'
+          }
+        };
+
+        var lang = 'en';
+        try {
+          if (localStorage.getItem('nrf_lang_v1') === 'ur') lang = 'ur';
+        } catch (e) {}
+
+        function apply(l) {
+          lang = l === 'ur' ? 'ur' : 'en';
+          var d = copy[lang];
+          document.documentElement.lang = lang;
+          document.documentElement.dir = lang === 'ur' ? 'rtl' : 'ltr';
+          document.getElementById('btn-en').classList.toggle('is-active', lang === 'en');
+          document.getElementById('btn-ur').classList.toggle('is-active', lang === 'ur');
+          document.getElementById('b-title').textContent = d.brand;
+          document.getElementById('code-lbl').textContent = d.code;
+          document.getElementById('h1-title').textContent = d.h1;
+          document.getElementById('desc-txt').textContent = d.desc;
+          document.getElementById('lnk-home').textContent = d.home;
+          document.getElementById('lnk-crops').textContent = d.crops;
+          document.getElementById('lnk-fg').textContent = d.fg;
+          document.getElementById('lnk-lab').textContent = d.lab;
+          document.getElementById('lnk-sim').textContent = d.sim;
+          document.getElementById('lnk-course').textContent = d.course;
+          document.getElementById('lnk-plan').textContent = d.plan;
+          document.getElementById('lnk-pdf').textContent = d.pdf;
+        }
+
+        document.getElementById('btn-en').addEventListener('click', function () { apply('en'); });
+        document.getElementById('btn-ur').addEventListener('click', function () { apply('ur'); });
+        apply(lang);
+
+        // If hosted statically from root on github.io/<repo>/some/missing/path, fix relative ./ links
+        if (window.location.hostname.endsWith('.github.io')) {
+          var parts = window.location.pathname.split('/').filter(Boolean);
+          if (parts.length > 0 && document.getElementById('lnk-home').getAttribute('href').indexOf('./') === 0) {
+            var repoBase = '/' + parts[0] + '/';
+            document.querySelectorAll('a[href^="./"]').forEach(function (a) {
+              a.setAttribute('href', repoBase + a.getAttribute('href').slice(2));
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
